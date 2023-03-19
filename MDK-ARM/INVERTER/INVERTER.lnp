@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"inverter\startup_stm32f103xb.o"
+"inverter\clcd_i2c.o"
+"inverter\main.o"
+"inverter\stm32f1xx_it.o"
+"inverter\stm32f1xx_hal_msp.o"
+"inverter\stm32f1xx_hal_gpio_ex.o"
+"inverter\stm32f1xx_hal_adc.o"
+"inverter\stm32f1xx_hal_adc_ex.o"
+"inverter\stm32f1xx_hal.o"
+"inverter\stm32f1xx_hal_rcc.o"
+"inverter\stm32f1xx_hal_rcc_ex.o"
+"inverter\stm32f1xx_hal_gpio.o"
+"inverter\stm32f1xx_hal_dma.o"
+"inverter\stm32f1xx_hal_cortex.o"
+"inverter\stm32f1xx_hal_pwr.o"
+"inverter\stm32f1xx_hal_flash.o"
+"inverter\stm32f1xx_hal_flash_ex.o"
+"inverter\stm32f1xx_hal_exti.o"
+"inverter\stm32f1xx_hal_i2c.o"
+"inverter\stm32f1xx_hal_tim.o"
+"inverter\stm32f1xx_hal_tim_ex.o"
+"inverter\system_stm32f1xx.o"
+--strict --scatter "INVERTER\INVERTER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "INVERTER.map" -o INVERTER\INVERTER.axf
